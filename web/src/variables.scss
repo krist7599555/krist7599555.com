@@ -1,3 +1,5 @@
 /* Variables and mixins declared here will be available in all other SCSS files */ /* https://github.com/jgthms/bulma/issues/1293 */
 $body-overflow-y: auto;
-$primary: hsl(338, 84%, 64%)
+// $primary: hsl(338, 84%, 64%)
+// $primary: theme('colors.primary');
+$primary: #5374e5;

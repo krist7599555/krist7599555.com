@@ -2,7 +2,7 @@
   <title>krist7599555</title>
 </svelte:head>
 
-<section class="hero is-primary is-fullheight">
+<section class="hero is-primary is-halfheight">
 	<nav class="hero-head">
 		<nav class="navbar">
 			<div class="container">
@@ -18,7 +18,7 @@
 		</nav>
 	</nav>
 	<div class="hero-body">
-    <div class="container has-text-centered">
+    <div class="container text-center">
       <p class="title">
         Krist7599555
       </p>
@@ -27,4 +27,14 @@
       </p>
     </div>
 	</div>
+</section>
+
+<section class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-rows-[repeat(5,400px)]">
+  <div class="bg-red-400"></div>
+  <div class="bg-green-400"></div>
+  <div class="bg-blue-400"></div>
+  <div class="bg-yellow-400"></div>
+  <div class="bg-purple-400"></div>
+  <div class="bg-orange-400"></div>
+
 </section>
