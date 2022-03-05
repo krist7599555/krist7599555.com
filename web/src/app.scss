@@ -7,19 +7,25 @@
 // @import 'bulma/sass/grid/_all';
 // @import 'bulma/sass/helpers/_all';
 // @import 'bulma/sass/layout/_all';
-
+@import '@fontsource/noto-sans-thai';
+@import '@fontsource/noto-sans-display';
 @tailwind base;
+@layer base {
+  html,
+  body {
+    font-family: 'Noto Sans Thai', 'Noto Sans Display', serif;
+  }
+}
 @tailwind components;
 @layer components {
-  @import 'bulma/sass/utilities/_all';
-  @import 'bulma/sass/base/_all';
-  @import 'bulma/sass/elements/_all';
+  // @import 'bulma/sass/utilities/_all';
+  // @import 'bulma/sass/base/_all';
+  // @import 'bulma/sass/elements/_all';
   // @import 'bulma/sass/form/_all';
-  @import 'bulma/sass/components/_all';
+  // @import 'bulma/sass/components/_all';
   // @import 'bulma/sass/grid/_all';
   // @import 'bulma/sass/helpers/_all';
   // @import 'bulma/sass/layout/_all';
-  @import 'bulma/sass/layout/hero';
-  
+  // @import 'bulma/sass/layout/hero';
 }
 @tailwind utilities;

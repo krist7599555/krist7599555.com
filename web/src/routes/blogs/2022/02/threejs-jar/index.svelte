@@ -1,1 +1,0 @@
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab a vitae reiciendis saepe nemo deserunt accusantium dolores voluptas quos maiores fugit corporis, optio commodi culpa modi pariatur quo! Debitis, dolores?
