@@ -1,1 +1,2 @@
+DEFAULT LAYOUT
 <slot />

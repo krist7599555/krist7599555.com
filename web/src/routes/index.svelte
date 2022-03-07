@@ -16,7 +16,7 @@
 <script lang="ts">
   import Seo from '$lib/seo.svelte';
   import { format } from 'date-fns';
-  import th from 'date-fns/locale/th';
+  import th from 'date-fns/locale/th/index.js';
   export let blogs: {
     paths: { url: string; metadata: any }[];
   };

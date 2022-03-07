@@ -1,4 +1,4 @@
-<div class="dark:bg-[#121212]">
+<div class="dark:bg-dark">
   <article class="prose mx-auto py-16 dark:prose-invert">
     <slot />
     <hr />

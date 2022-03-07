@@ -30,7 +30,7 @@ layout: blog
 ตอนนี้ทำงานอยู่ที่ บ. [Inside the Sandbox](https://fb.com/insidethesandbox) แต่ทุกคนน่าจะรู้จักในชื่อ [Deadline Always Exists](https://www.facebook.com/deadlinealwaysexists) มากกว่า ก็กราบขอบคุณกว่า 100k like และทุกๆกำลังใจ ที่ทำให้ตัวผมและเพื่อนๆเลือกที่จะเปิดบริษัทเป็นของตัวเองเพื่อทำตามความฝันด้วยนะครับ ถ้ามีโอกาสจะมาเล่าเกี่ยวกับความเป็นมาเป็นไป และความเชื่อ ของพวกเรานะครับ
 
 <figure>
-  <img src={profile_image} class="w-[min(100%,250px)]">
+  <img src={profile_image} class="w-[min(100%,250px)]" alt="แนบภาพตัวเอง">
   <figcaption>แนบภาพตัวเอง</figcaption>
 </figure>
 
