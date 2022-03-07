@@ -9,12 +9,8 @@ layout: blog
 ---
 
 <script>
-  import { onMount } from 'svelte'
   import profile_image from './profile.jpg'
   import numpad_image from './numpad.jpg'
-  onMount(() => {
-    console.log('ok')
-  })
 </script>
 
 # Introduction
