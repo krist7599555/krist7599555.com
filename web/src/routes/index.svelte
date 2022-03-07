@@ -26,9 +26,9 @@
 
 <section>
   <div class="container mx-auto pt-16 pb-12">
-    <div class="container text-center">
+    <div class="container text-center px-8">
       <p class="text-2xl font-bold">Krist Ponpairin</p>
-      <p class="text-base mt-2">Personal Journey of what we See, Think and Believe</p>
+      <p class="text-base mt-2">Personal Journey, See, Think and Believe</p>
     </div>
   </div>
 </section>
