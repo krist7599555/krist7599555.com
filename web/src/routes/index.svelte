@@ -1,40 +1,59 @@
-<svelte:head>
-  <title>krist7599555</title>
-</svelte:head>
+<script lang="ts" context="module">
+  import type { Load } from '@sveltejs/kit';
+  export const load: Load = async ({ fetch }) => {
+    return {
+      props: {
+        blogs: await fetch('/blogs', {
+          headers: {
+            accept: 'application/json'
+          }
+        }).then(res => res.json())
+      }
+    };
+  };
+</script>
 
-<section class="hero is-primary is-halfheight">
-	<nav class="hero-head">
-		<nav class="navbar">
-			<div class="container">
-				<div class="navbar-brand">
-					<a class="navbar-item" href='https://github.com/krist7599555'>Github</a>
-          <span class="navbar-burger" data-target="navbarMenuHeroA">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-				</div>
-			</div>
-		</nav>
-	</nav>
-	<div class="hero-body">
+<script lang="ts">
+  import Seo from '$lib/seo.svelte';
+  import { format } from 'date-fns';
+  import th from 'date-fns/locale/th';
+  export let blogs: {
+    paths: { url: string; metadata: any }[];
+  };
+</script>
+
+<Seo title="Krist Ponpairin" description="Personal Journey of what we See, Think and Believe" />
+
+<section>
+  <div class="container mx-auto pt-16 pb-12">
     <div class="container text-center">
-      <p class="title">
-        Krist7599555
-      </p>
-      <p class="subtitle">
-        Krist Ponpairin
-      </p>
+      <p class="text-2xl font-bold">Krist Ponpairin</p>
+      <p class="text-base mt-2">Personal Journey of what we See, Think and Believe</p>
     </div>
-	</div>
+  </div>
 </section>
 
-<section class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-rows-[repeat(5,400px)]">
-  <div class="bg-red-400"></div>
-  <div class="bg-green-400"></div>
-  <div class="bg-blue-400"></div>
-  <div class="bg-yellow-400"></div>
-  <div class="bg-purple-400"></div>
-  <div class="bg-orange-400"></div>
-
+<section
+  class="flex flex-col w-[min(100%,500px)] px-8 pb-24 pt-12 mx-auto divide-y-2 divide-opacity-50"
+>
+  <!--  -->
+  {#each blogs.paths as blog}
+    <div class="py-6">
+      <a class="text-xl font-bold" href={blog.url}>
+        {blog.metadata.title}
+      </a>
+      <p class="mt-4 text-xs opacity-70">
+        {format(new Date(blog.metadata.date), 'EEE d MMMM, yyyy', {
+          locale: th
+        })}
+      </p>
+      <p class="mt-2">{blog.metadata.description}</p>
+      <a
+        href={blog.url}
+        class="inline-block mt-3 bg-dark bg-opacity-80 hover:bg-opacity-50 text-white px-3 py-1"
+      >
+        อ่านต่อ
+      </a>
+    </div>
+  {/each}
 </section>

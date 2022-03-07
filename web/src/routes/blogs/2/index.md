@@ -1,7 +1,7 @@
 ---
 slug: when-i-was-a-young-man-i-wanted-to-change-the-world-feat-poomrokc
 title: When I was a young man, I wanted to change the world (feat PoomrokC)
-description: My First Lovely article
+description: บทกลอนประพันธ์แนะนำโดย PoomrokC ที่ทำให้ได้คิดถึงการเติบโตเพื่อรู้ว่าเราเปลี่ยนโลกไม่ได้ แต่เราเปลี่ยนตัวเองได้
 author: Krist Ponpairin
 date: 6 March 2022
 keywords: [poomrokc, imc, lifelesson]

@@ -4,9 +4,9 @@
   import SvelteSeo from 'svelte-seo';
   export let title: string;
   export let description: string;
-  export let image: string;
-  export let keywords: string[];
-  export let authors: string[];
+  export let image = 'https://krist7599555.com/og.jpg';
+  export let keywords: string[] = [];
+  export let authors: string[] = ['Krist Ponpairin'];
 </script>
 
 <SvelteSeo

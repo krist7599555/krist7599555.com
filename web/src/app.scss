@@ -16,8 +16,8 @@
   html,
   body {
     @apply text-[16px] md:text-[17px];
-    @apply bg-white text-[#121212];
-    @apply dark:bg-[#121212] dark:text-white;
+    @apply bg-white text-dark;
+    @apply dark:bg-dark dark:text-white;
     font-family: 'Noto Sans Thai', 'Noto Sans Display', serif;
   }
 }

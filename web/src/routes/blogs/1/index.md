@@ -1,7 +1,7 @@
 ---
 slug: introduction
 title: Introduction of Myself
-description: Mr. Krist Ponpairin simple diary to noted meaningfull life journey
+description: แนะนำตัวกฤษ และแนะนำบทความว่าสิ่งนี้คืออะไร
 author: Krist Ponpairin
 date: 4 March 2022
 keywords: [self, introduction]
@@ -25,10 +25,7 @@ layout: blog
 
 ไหนๆแล้วเพื่อความน่าเชื่อถือเผื่อจะมีคนเอาไปทำอ้างอิงจะได้เรียกกันถูก ผม กฤษฏิ์ พรไพรินทร์ (Krist Ponpairin) บ้างก็จะเจอผมในชื่อเล่น **krist7599555** ถ้าถามเชียวว่าเลข 7599555 มาจากไหน ก็ตอบเลยว่า มาจากตอนสร้าง id เกมแล้วไม่อยากให้ซ้ำใครเลยสุ่มเลขบน num pad
 
-<figure>
-  <img src={numpad_image} />
-  <figcaption>ถ้าลองกด 7599555 ดูจะมีหน้าตาคล้ายๆสามเหลี่ยม</figcaption>
-</figure>
+![ถ้าลองกด 7599555 ดูจะมีหน้าตาคล้ายๆสามเหลี่ยม]({numpad_image})
 
 ตอนนี้ทำงานอยู่ที่ บ. [Inside the Sandbox](https://fb.com/insidethesandbox) แต่ทุกคนน่าจะรู้จักในชื่อ [Deadline Always Exists](https://www.facebook.com/deadlinealwaysexists) มากกว่า ก็กราบขอบคุณกว่า 100k like และทุกๆกำลังใจ ที่ทำให้ตัวผมและเพื่อนๆเลือกที่จะเปิดบริษัทเป็นของตัวเองเพื่อทำตามความฝันด้วยนะครับ ถ้ามีโอกาสจะมาเล่าเกี่ยวกับความเป็นมาเป็นไป และความเชื่อ ของพวกเรานะครับ
 
