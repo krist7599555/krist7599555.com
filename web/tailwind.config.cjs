@@ -3,7 +3,7 @@
 const plugin = require('tailwindcss/plugin');
 
 const config = {
-  content: ['./src/**/*.{html,js,svelte,ts,md,svx}'],
+  content: ['./src/**/*.{html,js,svelte,ts,md,svx,html}'],
 
   theme: {
     extend: {
