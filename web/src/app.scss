@@ -1,36 +1,12 @@
-/* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */ /* Import only what you need from Bulma */
-// @import 'bulma/sass/utilities/_all';
-// @import 'bulma/sass/base/_all';
-// @import 'bulma/sass/elements/_all';
-// @import 'bulma/sass/form/_all';
-// @import 'bulma/sass/components/_all';
-// @import 'bulma/sass/grid/_all';
-// @import 'bulma/sass/helpers/_all';
-// @import 'bulma/sass/layout/_all';
 @import '@fontsource/noto-sans-thai';
 @import '@fontsource/noto-sans-thai/600.css';
 @import '@fontsource/noto-sans-display';
 @import '@fontsource/noto-sans-display/600.css';
+
 @tailwind base;
-@layer base {
-  html,
-  body {
-    @apply text-[16px] md:text-[17px];
-    @apply bg-white text-dark;
-    @apply dark:bg-dark dark:text-white;
-    font-family: 'Noto Sans Thai', 'Noto Sans Display', serif;
-  }
-}
 @tailwind components;
-@layer components {
-  // @import 'bulma/sass/utilities/_all';
-  // @import 'bulma/sass/base/_all';
-  // @import 'bulma/sass/elements/_all';
-  // @import 'bulma/sass/form/_all';
-  // @import 'bulma/sass/components/_all';
-  // @import 'bulma/sass/grid/_all';
-  // @import 'bulma/sass/helpers/_all';
-  // @import 'bulma/sass/layout/_all';
-  // @import 'bulma/sass/layout/hero';
-}
 @tailwind utilities;
+
+@layer components {
+  // empty
+}

@@ -1,5 +1,4 @@
 import { defineMDSveXConfig as defineConfig } from 'mdsvex';
-// import remarkUnwrapImages from 'remark-unwrap-images';
 import rehypeFigure from 'rehype-figure';
 
 const config = defineConfig({
@@ -12,9 +11,7 @@ const config = defineConfig({
     blog: './src/mdsvex-layout/blog.svelte',
     _: './src/mdsvex-layout/default.svelte'
   },
-  remarkPlugins: [
-    // remarkUnwrapImages
-  ],
+  remarkPlugins: [],
   rehypePlugins: [rehypeFigure]
 });
 
