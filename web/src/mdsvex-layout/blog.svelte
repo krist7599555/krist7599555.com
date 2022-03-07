@@ -1,3 +1,18 @@
+<script>
+  import Seo from '$lib/seo.svelte';
+  /** @type {import('../routes/blogs/index.json').BlogMetadataType} */
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
+  $: metadata = $$props;
+</script>
+
+<Seo
+  title={metadata.title}
+  description={metadata.description}
+  keywords={metadata.keywords}
+  publishedTime={(metadata.date || '').toString()}
+/>
+
 <div class="dark:bg-dark">
   <article class="prose mx-auto py-16 dark:prose-invert">
     <slot />

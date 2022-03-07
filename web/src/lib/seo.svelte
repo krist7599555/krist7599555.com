@@ -5,6 +5,7 @@
   export let image = 'https://krist7599555.com/og.jpg';
   export let keywords: string[] = [];
   export let authors: string[] = ['Krist Ponpairin'];
+  export let publishedTime: string | null = null;
 </script>
 
 <SvelteSeo
@@ -21,7 +22,8 @@
     ],
     article: {
       authors: ['Krist Ponpairin', ...authors],
-      tags: keywords
+      tags: keywords,
+      publishedTime
     }
   }}
   twitter={{

@@ -49,3 +49,6 @@ export const get = async () => {
     }
   };
 };
+
+export type BlogsType = Awaited<ReturnType<typeof get>>['body'];
+export type BlogMetadataType = BlogsType['paths'][number]['metadata'];
