@@ -1,7 +1,6 @@
 <script>
   import Seo from '$lib/seo.svelte';
   /** @type {import('../routes/blogs/index.json').BlogMetadataType} */
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   $: metadata = $$props;
 </script>

@@ -1,5 +1,5 @@
 import { defineMDSveXConfig as defineConfig } from 'mdsvex';
-import remarkUnwrapImages from 'remark-unwrap-images';
+// import remarkUnwrapImages from 'remark-unwrap-images';
 import rehypeFigure from 'rehype-figure';
 
 const config = defineConfig({

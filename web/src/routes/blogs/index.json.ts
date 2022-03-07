@@ -33,7 +33,7 @@ export const get = async () => {
       tap(arr => {
         const slugs = arr.map(o => o.metadata.slug);
         new Set(slugs).forEach(s => {
-          slugs.splice(findIndex(slugs), 1);
+          slugs.splice(findIndex(slugs, s), 1);
         });
         if (slugs.length > 0) {
           throw new Error(`slug is not unique at ${JSON.stringify(slugs)}`);
