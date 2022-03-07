@@ -7,6 +7,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html,
+  body {
+    @apply text-[16px] md:text-[17px];
+    @apply bg-white text-dark;
+    @apply dark:bg-dark dark:text-white;
+    font-family: 'Noto Sans Thai', 'Noto Sans Display', serif;
+  }
+}
+
 @layer components {
-  // empty
+  // no
 }
