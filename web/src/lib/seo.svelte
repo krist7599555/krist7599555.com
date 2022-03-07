@@ -1,6 +1,4 @@
 <script lang="ts">
-  import { flatMap } from 'lodash-es';
-
   import SvelteSeo from 'svelte-seo';
   export let title: string;
   export let description: string;

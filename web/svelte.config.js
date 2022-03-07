@@ -5,7 +5,7 @@ import preprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  extensions: ['.svelte', ...mdsvexConfig.extensions],
+  extensions: ['.svelte', '.md', '.svx', ...mdsvexConfig.extensions],
 
   // Consult https://github.com/sveltejs/svelte-preprocess
   // for more information about preprocessors
@@ -20,7 +20,16 @@ const config = {
   ],
 
   kit: {
-    adapter: adapter(),
+    adapter: adapter({
+      pages: 'build',
+      assets: 'build',
+      fallback: null
+    }),
+    prerender: {
+      crawl: false,
+      enabled: true,
+      entries: ['*']
+    },
 
     vite: {
       css: {

@@ -3,7 +3,7 @@
   export const load: Load = async ({ fetch }) => {
     return {
       props: {
-        blogs: await fetch('/blogs', {
+        blogs: await fetch('/blogs.json', {
           headers: {
             accept: 'application/json'
           }
