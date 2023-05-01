@@ -1,8 +1,8 @@
 <script>
-  import Seo from '$lib/seo.svelte';
-  /** @type {import('../routes/blogs/index.json').BlogMetadataType} */
-  // @ts-ignore
-  $: metadata = $$props;
+import Seo from '$lib/seo.svelte';
+/** @type {import('../routes/blogs/index.json').BlogMetadataType} */
+// @ts-ignore
+$: metadata = $$props;
 </script>
 
 <Seo
@@ -21,25 +21,25 @@
 </div>
 
 <style>
-  /* mobile */
-  @media only screen and (max-width: 85ch) {
-    .prose > :global(:not(figure)) {
-      margin-left: 2rem;
-      margin-right: 2rem;
-    }
+/* mobile */
+@media only screen and (max-width: 85ch) {
+  .prose > :global(:not(figure)) {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
+}
 
-  .prose :global(img) + :global(figcaption) {
-    text-align: center;
-    position: relative;
-    top: -1rem;
-  }
-  .prose > :global(figure) > :global(img) {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .prose > :global(blockquote) > :global(p::before),
-  .prose > :global(blockquote) > :global(p::after) {
-    content: '';
-  }
+.prose :global(img) + :global(figcaption) {
+  text-align: center;
+  position: relative;
+  top: -0.5rem;
+}
+.prose > :global(figure) > :global(img) {
+  margin-left: auto;
+  margin-right: auto;
+}
+.prose > :global(blockquote) > :global(p::before),
+.prose > :global(blockquote) > :global(p::after) {
+  content: '';
+}
 </style>
