@@ -30,7 +30,7 @@ export let data: LayoutData;
   {#if data.newer}
     <a href={data.newer.url} class="rounded group p-4 w-full block border col-start-2 no-underline">
       <div class="font-semibold text-[0.9rem] leading-6 group-hover:underline">
-        {data.newer.metadata.title} (ถัดไป)
+        {data.newer.metadata.title}
       </div>
       <div class="text-sm mt-2">{data.newer.metadata.description}</div>
       <div class="text-sm mt-2 text-gray-400 flex items-center gap-2">
